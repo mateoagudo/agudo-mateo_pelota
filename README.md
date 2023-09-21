@@ -1,1 +1,5 @@
-# agudo-mateo_pelota
+# pelota que rebota
+
+Este es el primer proyecto de la clase de código creativo de la U. Se trata de una pelota que rebota.
+
+Esta programado con la libreria de JavaScript p5.js
