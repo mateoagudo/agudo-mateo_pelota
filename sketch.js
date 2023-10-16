@@ -3,6 +3,8 @@ let posY;
 let diametro;
 let radio;
 let circulo;
+let fondo;
+let velX;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -17,17 +19,21 @@ function setup() {
   diametro = 30;
   radio = diametro / 2;
   circulo = color(255, 150, 0);
+  fondo = color(0, 50, 200);
+  velX = 25;
 }
 
 function draw() {
-  background(255);
-  posX -= 10;
+  background(fondo);
+  posX -= velX;
   if (posX < -radio) {
-    diametro = random(10, 100);
+    diametro = random(50, 200);
     radio = diametro / 2;
     posX = windowWidth + radio;
     posY = random(windowHeight);
     circulo = color(255, random(0, 255), 0);
+    fondo = color(random(0, 150), 0, 255);
+    22;
   }
 
   fill(circulo);
